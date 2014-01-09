@@ -9,7 +9,7 @@ class NameController < ApplicationController
 	def create
 		@name = Name.new(name_params)
 		if @name.save
-			flash[:notice] = "You have signed up successfully. If enabled, a confirmation was sent to your e-mail."
+			flash[:notice] = "User is created Successfully."
 		else
 			render :action => :new
 		end
